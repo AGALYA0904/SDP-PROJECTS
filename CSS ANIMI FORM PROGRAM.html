@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body { background-color: black;font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  border-color:#FC7676;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: grey;
+  
+}
+
+input[type=submit] {
+  background-color: #FC7676;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #FC7676;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fc7676;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3 style="background-color:#FC7676;">ANIMI-FORM</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="animiname">ANIMI-Name</label>
+    <input type="text" id="nameTextBox" name="animiname" placeholder=" ">
+
+    
+
+    <label for="country">ANIMI-(ORIGIN-COUNTRY)</label>
+    <select id="countryTextBox" name="country">
+      <option value="japan">Japan</option>
+      <option value="china">China</option>
+      <option value="southkorea">South Korea</option>
+    </select>
+
+    <label for="no.of.episode">No.Of.Episode</label>
+    <input type="text" id="noOfEpisodeTextBox" placeholder=" ">
+
+<label for="yourrating">YOUR RATING</label>
+    <input type="text" id="yourRatingTextBox" placeholder=" ">
+
+<label for="awards">AWARDS</label>
+    <input type="text" id="awardsTextBox" placeholder=" ">
+
+<label for="description">DESCRIPTION ABOUT ANIMI</label>
+    <textarea id="descriptionTextBox" name="description" placeholder=" " style="height:200px"></textarea>
+
+    <input type="submit" id="submitButton" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
